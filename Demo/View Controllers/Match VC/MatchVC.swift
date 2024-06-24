@@ -31,7 +31,7 @@ class MatchVC: UIViewController {
             } else {
                 DispatchQueue.main.async {
                     if self.matchViewModel.matchList.count == 0 {
-                        self.showAlertMessage(title: "Alert", message: "No matched currently.")
+                        self.showAlertMessage(title: "Alert", message: "No matches currently.")
                     } else {
                         self.tableView.reloadData()
                     }
