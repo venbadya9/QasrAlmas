@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatsView" customModule="Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="matchBtn" destination="6do-oa-C5E" id="flh-Os-fiQ"/>
+                <outlet property="set1Btn" destination="5T2-km-w0g" id="AA6-Ob-Vhq"/>
+                <outlet property="set2Btn" destination="8zB-LJ-Vcq" id="mkZ-J1-ydk"/>
+                <outlet property="set3Btn" destination="bTt-Ij-VrO" id="qUd-G0-die"/>
+                <outlet property="stackView" destination="Wc4-jw-dJ3" id="2D4-Ev-eYx"/>
+                <outletCollection property="btnCollection" destination="6do-oa-C5E" collectionClass="NSMutableArray" id="i1u-aM-Gfx"/>
+                <outletCollection property="btnCollection" destination="5T2-km-w0g" collectionClass="NSMutableArray" id="yyc-ST-2ww"/>
+                <outletCollection property="btnCollection" destination="8zB-LJ-Vcq" collectionClass="NSMutableArray" id="3UW-Qv-dYm"/>
+                <outletCollection property="btnCollection" destination="bTt-Ij-VrO" collectionClass="NSMutableArray" id="kRx-nR-LcV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="281"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdH-C4-P0H">
+                    <rect key="frame" x="80.666666666666686" y="15" width="232" height="32"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6do-oa-C5E" userLabel="Match Btn">
+                            <rect key="frame" x="0.0" y="0.0" width="52" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="52" id="c8S-u4-77Y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Match">
+                                <color key="titleColor" red="0.75686274509803919" green="0.78823529411764703" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.22352941176470587" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="matchTapped:" destination="-1" eventType="touchUpInside" id="eE2-dB-T3y"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5T2-km-w0g" userLabel=" Set1 Btn">
+                            <rect key="frame" x="66.999999999999986" y="0.0" width="45" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="zgB-kF-Emg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Set1">
+                                <color key="titleColor" red="0.75686274509803919" green="0.78823529411764703" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.22352941176470587" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="set1Tapped:" destination="-1" eventType="touchUpInside" id="5s6-f5-SeB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zB-LJ-Vcq" userLabel="Set2 Btn">
+                            <rect key="frame" x="127" y="2" width="45" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="joR-IN-D7b"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Set2">
+                                <color key="titleColor" red="0.75686274509803919" green="0.78823529411764703" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.22352941176470587" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="set2Tapped:" destination="-1" eventType="touchUpInside" id="Rod-Vr-396"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTt-Ij-VrO" userLabel="Set3 Btn">
+                            <rect key="frame" x="187" y="0.0" width="45" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="5wa-gO-h4B"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Set3">
+                                <color key="titleColor" red="0.75686274509803919" green="0.78823529411764703" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.22352941176470587" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="set3Tapped:" destination="-1" eventType="touchUpInside" id="z00-9U-ehI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5T2-km-w0g" firstAttribute="top" secondItem="HdH-C4-P0H" secondAttribute="top" id="40E-m0-SQb"/>
+                        <constraint firstItem="bTt-Ij-VrO" firstAttribute="top" secondItem="HdH-C4-P0H" secondAttribute="top" id="8SI-R3-omd"/>
+                        <constraint firstItem="bTt-Ij-VrO" firstAttribute="leading" secondItem="8zB-LJ-Vcq" secondAttribute="trailing" constant="15" id="E1E-9O-nv7"/>
+                        <constraint firstItem="5T2-km-w0g" firstAttribute="leading" secondItem="6do-oa-C5E" secondAttribute="trailing" constant="15" id="Kfe-AV-sOp"/>
+                        <constraint firstAttribute="height" constant="32" id="cl1-bL-m6d"/>
+                        <constraint firstItem="bTt-Ij-VrO" firstAttribute="centerY" secondItem="HdH-C4-P0H" secondAttribute="centerY" id="fCI-aO-xJZ"/>
+                        <constraint firstItem="6do-oa-C5E" firstAttribute="leading" secondItem="HdH-C4-P0H" secondAttribute="leading" id="gTr-bk-deB"/>
+                        <constraint firstItem="8zB-LJ-Vcq" firstAttribute="leading" secondItem="5T2-km-w0g" secondAttribute="trailing" constant="15" id="mOI-7q-xfX"/>
+                        <constraint firstItem="8zB-LJ-Vcq" firstAttribute="centerY" secondItem="HdH-C4-P0H" secondAttribute="centerY" id="sPl-0d-7ul"/>
+                        <constraint firstAttribute="trailing" secondItem="bTt-Ij-VrO" secondAttribute="trailing" id="xf9-QB-vC7"/>
+                        <constraint firstItem="5T2-km-w0g" firstAttribute="baseline" secondItem="6do-oa-C5E" secondAttribute="baseline" id="z34-a1-Bxp"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRg-p9-no4">
+                    <rect key="frame" x="20" y="55" width="353" height="226"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-jw-dJ3">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                            <color key="backgroundColor" red="0.16078431372549018" green="0.16862745098039217" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Wc4-jw-dJ3" firstAttribute="leading" secondItem="FRg-p9-no4" secondAttribute="leading" id="Yh6-n7-pZq"/>
+                        <constraint firstItem="Wc4-jw-dJ3" firstAttribute="trailing" secondItem="FRg-p9-no4" secondAttribute="trailing" id="ZJ1-fa-S7r"/>
+                        <constraint firstItem="Wc4-jw-dJ3" firstAttribute="bottom" secondItem="FRg-p9-no4" secondAttribute="bottom" id="hF0-Th-ihc"/>
+                        <constraint firstItem="Wc4-jw-dJ3" firstAttribute="width" secondItem="FRg-p9-no4" secondAttribute="width" id="pzW-cp-5AR"/>
+                        <constraint firstItem="Wc4-jw-dJ3" firstAttribute="top" secondItem="FRg-p9-no4" secondAttribute="top" id="xKq-65-EUN"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="oj2-Cy-1zn"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="T21-xA-0of"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.066666666666666666" green="0.078431372549019607" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HdH-C4-P0H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="B7C-j7-ynn"/>
+                <constraint firstItem="FRg-p9-no4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="55" id="agL-sa-7Qn"/>
+                <constraint firstItem="FRg-p9-no4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="k8d-Rc-2h4"/>
+                <constraint firstAttribute="bottom" secondItem="FRg-p9-no4" secondAttribute="bottom" id="nZQ-uX-gUg"/>
+                <constraint firstAttribute="trailing" secondItem="FRg-p9-no4" secondAttribute="trailing" constant="20" id="qOH-g5-khr"/>
+                <constraint firstItem="HdH-C4-P0H" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wfV-JC-AAh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-37.404580152671755" y="-179.57746478873241"/>
+        </view>
+    </objects>
+</document>

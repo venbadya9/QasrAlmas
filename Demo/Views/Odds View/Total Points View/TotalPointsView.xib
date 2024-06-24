@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TotalPointsView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Wi9-RN-zlL">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amz-PQ-qRv">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="83"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o48-6g-GXO" userLabel="Separator">
+                            <rect key="frame" x="10" y="25" width="373" height="1"/>
+                            <color key="backgroundColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Har-qW-ln0"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1I-u5-VLC" userLabel="Header1 Label">
+                            <rect key="frame" x="272" y="5" width="35.666666666666686" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="m14-2y-nMa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                            <color key="textColor" red="0.8862745098" green="0.89019607840000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Under" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbg-0J-s85" userLabel="Header2 Label">
+                            <rect key="frame" x="327" y="5" width="45.666666666666686" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="rjg-Go-D1T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                            <color key="textColor" red="0.8862745098" green="0.89019607840000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Game" translatesAutoresizingMaskIntoConstraints="NO" id="8Vw-ph-Cn6" userLabel="ImageView">
+                            <rect key="frame" x="8" y="44" width="65" height="19.999999999999996"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Syo-Ji-Pl5"/>
+                                <constraint firstAttribute="width" constant="65" id="eWC-Xa-aZd"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOM-sg-ylF" userLabel="Separator">
+                            <rect key="frame" x="83" y="25" width="1" height="57"/>
+                            <color key="backgroundColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="rsm-lK-M5o"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening odds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWM-PE-hbc" userLabel="Opening odds Label">
+                            <rect key="frame" x="94" y="34" width="76" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="bWr-zR-vDh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="12"/>
+                            <color key="textColor" red="0.8862745098" green="0.89019607840000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre-match odds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAp-42-YWZ" userLabel="Pre-match odds Label">
+                            <rect key="frame" x="94" y="60" width="84" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="k3E-Ck-kxQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="12"/>
+                            <color key="textColor" red="0.8862745098" green="0.89019607840000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.91" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfU-zA-1YV" userLabel="Value1 Label">
+                            <rect key="frame" x="275" y="32" width="28" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="MiB-08-NTp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                            <color key="textColor" red="0.8862745098" green="0.89019607840000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.91" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obc-ER-jKL" userLabel="Value2 Label">
+                            <rect key="frame" x="275" y="58" width="28" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="YEf-wp-N4t"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                            <color key="textColor" red="0.8862745098" green="0.89019607840000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGQ-kU-uwW" userLabel="Value3 Label">
+                            <rect key="frame" x="335" y="32" width="28" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="g5d-Nf-PQZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                            <color key="textColor" red="0.8862745098" green="0.89019607840000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYI-xU-ZHR" userLabel="Value4 Label">
+                            <rect key="frame" x="335" y="58" width="28" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="Cbt-Gs-RXH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                            <color key="textColor" red="0.8862745098" green="0.89019607840000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="71.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-C8-46I" userLabel="Current1 Label">
+                            <rect key="frame" x="217" y="32" width="28" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="zkY-IA-NLh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                            <color key="textColor" red="0.23137254901960785" green="0.88627450980392153" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="71.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs4-LQ-Xq0" userLabel="Current2 Label">
+                            <rect key="frame" x="217" y="58" width="28" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="Qbb-DX-4wo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                            <color key="textColor" red="0.23137254901960785" green="0.88627450980392153" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dr-QO-JpK" userLabel="Separator">
+                            <rect key="frame" x="10" y="82" width="373" height="1"/>
+                            <color key="backgroundColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Iq4-m8-vxh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zfU-zA-1YV" firstAttribute="leading" secondItem="wcs-C8-46I" secondAttribute="trailing" constant="30" id="1CH-8m-Gdr"/>
+                        <constraint firstItem="LAp-42-YWZ" firstAttribute="leading" secondItem="nOM-sg-ylF" secondAttribute="trailing" constant="10" id="3wc-cw-Keo"/>
+                        <constraint firstItem="8Vw-ph-Cn6" firstAttribute="leading" secondItem="amz-PQ-qRv" secondAttribute="leading" constant="8" id="4lr-LL-7ik"/>
+                        <constraint firstItem="rs4-LQ-Xq0" firstAttribute="top" secondItem="wcs-C8-46I" secondAttribute="bottom" constant="8" symbolic="YES" id="9uh-7Z-VAe"/>
+                        <constraint firstItem="wcs-C8-46I" firstAttribute="top" secondItem="o48-6g-GXO" secondAttribute="bottom" constant="6" id="DDV-gd-QeQ"/>
+                        <constraint firstItem="m1I-u5-VLC" firstAttribute="top" secondItem="amz-PQ-qRv" secondAttribute="top" constant="5" id="F23-gr-2yf"/>
+                        <constraint firstItem="cbg-0J-s85" firstAttribute="leading" secondItem="m1I-u5-VLC" secondAttribute="trailing" constant="19.333333333333371" id="Fnw-T0-8rl"/>
+                        <constraint firstItem="cbg-0J-s85" firstAttribute="top" secondItem="amz-PQ-qRv" secondAttribute="top" constant="5" id="Ick-mS-ds3"/>
+                        <constraint firstItem="o48-6g-GXO" firstAttribute="leading" secondItem="amz-PQ-qRv" secondAttribute="leading" constant="10" id="N6f-Qb-GZV"/>
+                        <constraint firstItem="3dr-QO-JpK" firstAttribute="top" secondItem="nOM-sg-ylF" secondAttribute="bottom" id="O4F-xZ-fTT"/>
+                        <constraint firstItem="o48-6g-GXO" firstAttribute="top" secondItem="amz-PQ-qRv" secondAttribute="top" constant="25" id="RkM-SQ-lVm"/>
+                        <constraint firstItem="LAp-42-YWZ" firstAttribute="top" secondItem="IWM-PE-hbc" secondAttribute="bottom" constant="12" id="Rw2-y1-2dY"/>
+                        <constraint firstItem="hGQ-kU-uwW" firstAttribute="top" secondItem="o48-6g-GXO" secondAttribute="bottom" constant="6" id="VSm-9w-uN1"/>
+                        <constraint firstItem="o48-6g-GXO" firstAttribute="top" secondItem="cbg-0J-s85" secondAttribute="bottom" constant="2" id="a11-iq-pRK"/>
+                        <constraint firstItem="nYI-xU-ZHR" firstAttribute="top" secondItem="hGQ-kU-uwW" secondAttribute="bottom" constant="8" symbolic="YES" id="d9P-y5-kdG"/>
+                        <constraint firstItem="obc-ER-jKL" firstAttribute="leading" secondItem="rs4-LQ-Xq0" secondAttribute="trailing" constant="30" id="g8T-fy-lIf"/>
+                        <constraint firstAttribute="trailing" secondItem="cbg-0J-s85" secondAttribute="trailing" constant="20.333333333333314" id="gK6-mo-f5V"/>
+                        <constraint firstItem="3dr-QO-JpK" firstAttribute="top" secondItem="obc-ER-jKL" secondAttribute="bottom" constant="6" id="gSf-Ft-dCx"/>
+                        <constraint firstAttribute="trailing" secondItem="3dr-QO-JpK" secondAttribute="trailing" constant="10" id="hNb-bc-YdN"/>
+                        <constraint firstItem="8Vw-ph-Cn6" firstAttribute="top" secondItem="o48-6g-GXO" secondAttribute="bottom" constant="18" id="ieJ-Op-cDU"/>
+                        <constraint firstAttribute="trailing" secondItem="nYI-xU-ZHR" secondAttribute="trailing" constant="30" id="ioX-bf-zS6"/>
+                        <constraint firstItem="zfU-zA-1YV" firstAttribute="top" secondItem="o48-6g-GXO" secondAttribute="bottom" constant="6" id="jed-bN-fvI"/>
+                        <constraint firstItem="o48-6g-GXO" firstAttribute="top" secondItem="m1I-u5-VLC" secondAttribute="bottom" constant="2" id="m8x-fG-Iy3"/>
+                        <constraint firstAttribute="trailing" secondItem="hGQ-kU-uwW" secondAttribute="trailing" constant="30" id="mGf-aE-cCn"/>
+                        <constraint firstItem="3dr-QO-JpK" firstAttribute="leading" secondItem="amz-PQ-qRv" secondAttribute="leading" constant="10" id="muC-VT-kVd"/>
+                        <constraint firstItem="IWM-PE-hbc" firstAttribute="leading" secondItem="nOM-sg-ylF" secondAttribute="trailing" constant="10" id="o1N-Zt-Vdx"/>
+                        <constraint firstItem="nOM-sg-ylF" firstAttribute="leading" secondItem="8Vw-ph-Cn6" secondAttribute="trailing" constant="10" id="pij-cS-Aj0"/>
+                        <constraint firstItem="hGQ-kU-uwW" firstAttribute="leading" secondItem="zfU-zA-1YV" secondAttribute="trailing" constant="32" id="vsa-xC-1fv"/>
+                        <constraint firstItem="nOM-sg-ylF" firstAttribute="top" secondItem="amz-PQ-qRv" secondAttribute="top" constant="25" id="vzL-pB-SY3"/>
+                        <constraint firstItem="obc-ER-jKL" firstAttribute="top" secondItem="zfU-zA-1YV" secondAttribute="bottom" constant="8" symbolic="YES" id="w4i-4A-hXK"/>
+                        <constraint firstAttribute="trailing" secondItem="o48-6g-GXO" secondAttribute="trailing" constant="10" id="wJd-7d-WDE"/>
+                        <constraint firstItem="nYI-xU-ZHR" firstAttribute="leading" secondItem="obc-ER-jKL" secondAttribute="trailing" constant="32" id="xzL-WD-OfC"/>
+                        <constraint firstItem="IWM-PE-hbc" firstAttribute="top" secondItem="o48-6g-GXO" secondAttribute="bottom" constant="8" id="yk6-pg-qVa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="amz-PQ-qRv" firstAttribute="top" secondItem="Wi9-RN-zlL" secondAttribute="top" id="Fde-xl-h61"/>
+                <constraint firstItem="amz-PQ-qRv" firstAttribute="leading" secondItem="Wi9-RN-zlL" secondAttribute="leading" id="J5F-pR-Sd0"/>
+                <constraint firstAttribute="bottom" secondItem="amz-PQ-qRv" secondAttribute="bottom" id="KWe-gC-EPu"/>
+                <constraint firstAttribute="trailing" secondItem="amz-PQ-qRv" secondAttribute="trailing" id="hKL-34-Uk3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="122.90076335877862" y="-248.23943661971833"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Game" width="65" height="20"/>
+    </resources>
+</document>

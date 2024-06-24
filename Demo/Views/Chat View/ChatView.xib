@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatView" customModule="Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="zk8-9K-3YC" id="8Bn-xi-cVT"/>
+                <outlet property="scrollView" destination="qUD-3K-TkZ" id="EhG-d1-lTk"/>
+                <outlet property="sendButton" destination="1jo-ZG-TDq" id="0XG-eE-Wcu"/>
+                <outlet property="stackView" destination="vkT-TZ-Kpg" id="xZm-8Y-tys"/>
+                <outlet property="textView" destination="kCL-kr-GbF" id="FyB-um-vMr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="406"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUD-3K-TkZ">
+                    <rect key="frame" x="15" y="0.0" width="363" height="316"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vkT-TZ-Kpg">
+                            <rect key="frame" x="0.0" y="20" width="363" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="vkT-TZ-Kpg" firstAttribute="bottom" secondItem="qUD-3K-TkZ" secondAttribute="bottom" id="4Yq-4N-oEK"/>
+                        <constraint firstItem="vkT-TZ-Kpg" firstAttribute="leading" secondItem="qUD-3K-TkZ" secondAttribute="leading" id="6Y8-af-jhU"/>
+                        <constraint firstItem="vkT-TZ-Kpg" firstAttribute="width" secondItem="qUD-3K-TkZ" secondAttribute="width" id="9hh-OH-sNi"/>
+                        <constraint firstItem="vkT-TZ-Kpg" firstAttribute="top" secondItem="qUD-3K-TkZ" secondAttribute="top" constant="20" id="FnM-gN-Xhe"/>
+                        <constraint firstItem="vkT-TZ-Kpg" firstAttribute="trailing" secondItem="qUD-3K-TkZ" secondAttribute="trailing" id="PuR-8M-RKo"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="bdt-8d-MEm"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="6OM-o6-P3J"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zk8-9K-3YC" userLabel="Container View">
+                    <rect key="frame" x="15" y="341" width="318" height="45"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kCL-kr-GbF">
+                            <rect key="frame" x="10" y="5" width="298" height="35"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.77254901960784317" green="0.7803921568627451" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="fX7-Fv-fkW"/>
+                            </connections>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20784313725490194" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="kCL-kr-GbF" firstAttribute="leading" secondItem="zk8-9K-3YC" secondAttribute="leading" constant="10" id="2D0-Sg-SGd"/>
+                        <constraint firstAttribute="trailing" secondItem="kCL-kr-GbF" secondAttribute="trailing" constant="10" id="F3G-co-9OB"/>
+                        <constraint firstItem="kCL-kr-GbF" firstAttribute="top" secondItem="zk8-9K-3YC" secondAttribute="top" constant="5" id="YO6-VN-DrF"/>
+                        <constraint firstAttribute="height" constant="45" id="Zvn-N4-hOI"/>
+                        <constraint firstAttribute="bottom" secondItem="kCL-kr-GbF" secondAttribute="bottom" constant="5" id="wv9-Hc-Fp5"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jo-ZG-TDq" userLabel="Send Btn">
+                    <rect key="frame" x="333" y="341" width="45" height="45"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20784313725490194" blue="0.19607843137254902" alpha="0.89803922179999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="Kvv-KB-49s"/>
+                        <constraint firstAttribute="height" constant="45" id="VIK-b1-eyh"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="Send"/>
+                    <connections>
+                        <action selector="sendTapped:" destination="-1" eventType="touchUpInside" id="9uT-Pj-Rmp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1jo-ZG-TDq" secondAttribute="trailing" constant="15" id="2Xn-tl-Ant"/>
+                <constraint firstAttribute="bottom" secondItem="qUD-3K-TkZ" secondAttribute="bottom" constant="90" id="4aO-n3-Kd2"/>
+                <constraint firstItem="zk8-9K-3YC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="6pG-by-y2c"/>
+                <constraint firstAttribute="trailing" secondItem="zk8-9K-3YC" secondAttribute="trailing" constant="60" id="QrW-vK-VaJ"/>
+                <constraint firstItem="qUD-3K-TkZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TJl-zj-6oS"/>
+                <constraint firstAttribute="bottom" secondItem="1jo-ZG-TDq" secondAttribute="bottom" constant="20" id="Ua4-CG-ibI"/>
+                <constraint firstItem="qUD-3K-TkZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="a06-WR-9j8"/>
+                <constraint firstAttribute="bottom" secondItem="zk8-9K-3YC" secondAttribute="bottom" constant="20" id="aKJ-vS-coO"/>
+                <constraint firstAttribute="trailing" secondItem="qUD-3K-TkZ" secondAttribute="trailing" constant="15" id="l4o-ga-cXJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-37.404580152671755" y="-137.32394366197184"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Send" width="19" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OddsCellView" customModule="Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="p1Label1" destination="zXd-aa-MVT" id="Kk6-vT-mdJ"/>
+                <outlet property="p1Label2" destination="ci7-14-uUJ" id="9mp-GW-h2Q"/>
+                <outlet property="p1Label3" destination="E9b-Ck-v7C" id="g6H-OZ-10x"/>
+                <outlet property="p1Label4" destination="Wqp-WX-7Ru" id="81W-ts-Y4H"/>
+                <outlet property="p2Label1" destination="OTd-78-tBX" id="QX6-0Y-dWX"/>
+                <outlet property="p2Label2" destination="1kZ-nF-8oO" id="K2G-oW-2Iz"/>
+                <outlet property="p2Label3" destination="X3f-73-Hdz" id="Mxg-Mz-FWw"/>
+                <outlet property="p2Label4" destination="bfB-qM-mde" id="xqg-gN-5e2"/>
+                <outlet property="timeLabel" destination="Eg8-fs-mjM" id="MK5-iw-sco"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:15 PM Thursday, January 11, 2024" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eg8-fs-mjM" userLabel="Time Label">
+                    <rect key="frame" x="20" y="13" width="100" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Fki-gZ-kYI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="12"/>
+                    <color key="textColor" red="0.88627450980392153" green="0.8901960784313725" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-1.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTd-78-tBX" userLabel="Player2 Label1">
+                    <rect key="frame" x="311.66666666666669" y="5" width="25.333333333333314" height="18"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.70588235290000001" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-1.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-nF-8oO" userLabel="Player2 Label2">
+                    <rect key="frame" x="311.66666666666669" y="27" width="25.333333333333314" height="18"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.70588235290000001" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3f-73-Hdz" userLabel="Player2 Label3">
+                    <rect key="frame" x="345" y="5" width="28" height="18"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" red="0.88627450980392153" green="0.8901960784313725" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfB-qM-mde" userLabel="Player2 Label4">
+                    <rect key="frame" x="345" y="27" width="28" height="18"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" red="0.88627450980392153" green="0.8901960784313725" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXd-aa-MVT" userLabel="Player1 Label1">
+                    <rect key="frame" x="200.66666666666666" y="5" width="30" height="18"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" red="0.23137254901960785" green="0.88627450980392153" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci7-14-uUJ" userLabel="Player1 Label2">
+                    <rect key="frame" x="200.66666666666666" y="27" width="30" height="18"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" red="0.23137254901960785" green="0.88627450980392153" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9b-Ck-v7C" userLabel="Player1 Label3">
+                    <rect key="frame" x="238.66666666666666" y="5" width="27.999999999999972" height="18"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" red="0.8862745098" green="0.89019607840000003" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqp-WX-7Ru" userLabel="Player1 Label4">
+                    <rect key="frame" x="238.66666666666666" y="27" width="27.999999999999972" height="18"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                    <color key="textColor" red="0.8862745098" green="0.89019607840000003" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeR-Vt-fBe">
+                    <rect key="frame" x="10" y="49" width="373" height="1"/>
+                    <color key="backgroundColor" red="0.25490196078431371" green="0.28627450980392155" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yu5-tS-Nkx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="E9b-Ck-v7C" firstAttribute="leading" secondItem="zXd-aa-MVT" secondAttribute="trailing" constant="8" id="1xG-oL-X26"/>
+                <constraint firstItem="xeR-Vt-fBe" firstAttribute="top" secondItem="Eg8-fs-mjM" secondAttribute="bottom" constant="13" id="3ls-gy-fcJ"/>
+                <constraint firstItem="xeR-Vt-fBe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="6OP-el-jAW"/>
+                <constraint firstItem="bfB-qM-mde" firstAttribute="top" secondItem="X3f-73-Hdz" secondAttribute="bottom" constant="4" id="6gG-VO-13L"/>
+                <constraint firstAttribute="bottom" secondItem="xeR-Vt-fBe" secondAttribute="bottom" id="AnS-3B-5Us"/>
+                <constraint firstItem="OTd-78-tBX" firstAttribute="leading" secondItem="E9b-Ck-v7C" secondAttribute="trailing" constant="45" id="BOz-kg-b9n"/>
+                <constraint firstItem="X3f-73-Hdz" firstAttribute="leading" secondItem="OTd-78-tBX" secondAttribute="trailing" constant="8" id="Bed-zc-QHc"/>
+                <constraint firstItem="zXd-aa-MVT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Dwh-lY-blu"/>
+                <constraint firstItem="OTd-78-tBX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Gl1-TA-oxl"/>
+                <constraint firstItem="Eg8-fs-mjM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="Jrd-5h-Xbx"/>
+                <constraint firstItem="1kZ-nF-8oO" firstAttribute="leading" secondItem="Wqp-WX-7Ru" secondAttribute="trailing" constant="45" id="Kg7-Wq-Pdl"/>
+                <constraint firstItem="X3f-73-Hdz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="MbZ-oT-6Ax"/>
+                <constraint firstItem="Wqp-WX-7Ru" firstAttribute="leading" secondItem="ci7-14-uUJ" secondAttribute="trailing" constant="8" id="QDc-e8-ykz"/>
+                <constraint firstItem="bfB-qM-mde" firstAttribute="leading" secondItem="1kZ-nF-8oO" secondAttribute="trailing" constant="8" id="Qpk-Zy-wmX"/>
+                <constraint firstItem="E9b-Ck-v7C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="VBV-n8-1md"/>
+                <constraint firstItem="1kZ-nF-8oO" firstAttribute="top" secondItem="OTd-78-tBX" secondAttribute="bottom" constant="4" id="Vke-NU-VIW"/>
+                <constraint firstAttribute="trailing" secondItem="X3f-73-Hdz" secondAttribute="trailing" constant="20" id="eNb-rm-ahH"/>
+                <constraint firstItem="Wqp-WX-7Ru" firstAttribute="top" secondItem="E9b-Ck-v7C" secondAttribute="bottom" constant="4" id="iKh-gP-X7w"/>
+                <constraint firstItem="Eg8-fs-mjM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="nkg-0V-Y0h"/>
+                <constraint firstItem="ci7-14-uUJ" firstAttribute="top" secondItem="zXd-aa-MVT" secondAttribute="bottom" constant="4" id="pvP-Hz-kcD"/>
+                <constraint firstAttribute="trailing" secondItem="xeR-Vt-fBe" secondAttribute="trailing" constant="10" id="yVg-Fq-JOp"/>
+                <constraint firstAttribute="trailing" secondItem="bfB-qM-mde" secondAttribute="trailing" constant="20" id="zAG-cK-Yno"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52.671755725190835" y="20.422535211267608"/>
+        </view>
+    </objects>
+</document>
